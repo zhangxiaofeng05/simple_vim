@@ -76,6 +76,9 @@ highlight CursorColumn cterm=NONE ctermbg=black ctermfg=green guibg=NONE guifg=N
 set autoindent
 " 按下 Tab 键时，Vim 显示的空格数
 set tabstop=4
+" 按tab键时产生的是4个空格
+set expandtab
+set autoindent
 " 在文本上按下>> <<等缩进,每一级的字符数
 set shiftwidth=4
 " 光标遇到括号,自动高亮对应的括号
