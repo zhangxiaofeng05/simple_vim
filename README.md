@@ -152,8 +152,8 @@ set showmatch
 
 ## TODU  
 
- - [x] install.sh
- - []  uninstall.sh
+1. - [x] install.sh
+2. - [ ]  uninstall.sh
 
 ## 为什么写这个  
 
