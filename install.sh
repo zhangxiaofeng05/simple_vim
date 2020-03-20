@@ -39,7 +39,9 @@ function backup_vimrc_file()
         backup_vimrc=$old_vimrc"_bak_"$time
         read -p "Find "$old_vimrc" already exists,backup "$old_vimrc" to "$backup_vimrc"? [Y/N] " ch
         if [[ $ch == "Y" ]] || [[ $ch == "y" ]]; then
-            cp $old_vimrc $backup_vimrc
+            mv $old_vimrc $backup_vimrc
+		else
+			/bin/rm $old_vimrc
         fi
     fi
 }
@@ -54,7 +56,9 @@ function backup_vim_dir()
         backup_vim=$old_vim"_bak_"$time
         read -p "Find "$old_vim" already exists,backup "$old_vim" to "$backup_vim"? [Y/N] " ch
         if [[ $ch == "Y" ]] || [[ $ch == "y" ]]; then
-            cp -R $old_vim $backup_vim
+            mv -R $old_vim $backup_vim
+		else
+			/bin/rm -rf $old_vim
         fi
     fi
 }
