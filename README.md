@@ -1,3 +1,10 @@
+## 安装  
+```
+wget https://raw.githubusercontent.com/lionng/simple_vim/master/install.sh
+bash install.sh
+```
+注意:依赖git  
+
 ## vim  
 
 1. vim官方地址 : https://github.com/vim/vim  ![](https://img.shields.io/github/stars/vim/vim)  ![](https://img.shields.io/github/forks/vim/vim)  
@@ -76,8 +83,8 @@ Plugin 'flazz/vim-colorschemes'
 " 代码注释 视图模式选中代码块  注释\cc  取消注释\cu
 Plugin 'preservim/nerdcommenter'
 " markdown预览
-Plugin 'iamcco/mathjax-support-for-mkdp'
-Plugin 'iamcco/markdown-preview.vim'
+" Plugin 'iamcco/mathjax-support-for-mkdp'
+" Plugin 'iamcco/markdown-preview.vim'
 
 " plugin end -------------------------"
 
@@ -137,16 +144,18 @@ set showmatch
 " let g:airline_theme='powerlineish'
 " MarkdownPreview
 " 在打开 markdown 文件后，使用该命令可以打开预览窗口
-map <C-m> :MarkdownPreview<CR>
+" map <C-m> :MarkdownPreview<CR>
 " 关闭 markdown 预览窗口，并停止开启的服务进程
-map <C-p> :MarkdownPreviewStop<CR>
+" map <C-p> :MarkdownPreviewStop<CR>
 "
 ```
 
 ## TODU  
 
- - [ ] bash脚本
+ - [x] install.sh
+ - []  uninstall.sh
 
 ## 为什么写这个  
 
-在学习vim的插件过程中,插件好多,翻了各种各样的资料,适合自己的插件并不多,做一下对比,方便取舍.制作属于自己的vim.
+vim用的很多,插件能够事半功倍.  
+制作属于自己`vimrc`

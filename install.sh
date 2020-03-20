@@ -99,7 +99,8 @@ function main()
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 	# 下载vimrc
 	cd $HOME
-	wget http://39.107.227.122:5000/linux/vim/.vimrc
+	#wget http://39.107.227.122:5000/linux/vim/.vimrc
+	wget https://raw.githubusercontent.com/lionng/simple_vim/master/.vimrc
 
 	# 执行安装插件的命令
 	install_vim_plugin

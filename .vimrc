@@ -26,8 +26,8 @@ Plugin 'flazz/vim-colorschemes'
 " 代码注释 视图模式选中代码块  注释\cc  取消注释\cu
 Plugin 'preservim/nerdcommenter'
 " markdown预览
-Plugin 'iamcco/mathjax-support-for-mkdp'
-Plugin 'iamcco/markdown-preview.vim'
+" Plugin 'iamcco/mathjax-support-for-mkdp'
+" Plugin 'iamcco/markdown-preview.vim'
 
 " plugin end -------------------------"
 
@@ -87,6 +87,6 @@ set showmatch
 " let g:airline_theme='powerlineish'
 " MarkdownPreview
 " 在打开 markdown 文件后，使用该命令可以打开预览窗口
-map <C-m> :MarkdownPreview<CR>
+" map <C-m> :MarkdownPreview<CR>
 " 关闭 markdown 预览窗口，并停止开启的服务进程
-map <C-p> :MarkdownPreviewStop<CR>
+" map <C-p> :MarkdownPreviewStop<CR>
