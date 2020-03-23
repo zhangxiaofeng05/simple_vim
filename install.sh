@@ -79,7 +79,17 @@ function install_vim_plugin()
 # 打印安装成功的信息
 function print_success()
 {
-    echo 'Just enjoy it!'
+    echo "============success======================="
+    echo "成功了!!Just enjoy it!"
+    echo "============success======================="
+}
+
+# 打印安装失败的信息
+function print_error()
+{
+    echo "============error========================="
+    echo "出错啦,可能是网络问题,请重新安装!!!"
+    echo "============error========================="
 }
 
 # 获取当前时间戳
@@ -95,7 +105,9 @@ function main()
     begin=`get_now_timestamp`
 
     # 温馨提示
+    echo "=========================="
     echo "脚本执行依赖git"
+    echo "=========================="
 
     # 备份
     backup_vimrc_and_vim
@@ -108,8 +120,16 @@ function main()
     # 执行安装插件的命令
     install_vim_plugin
 
-    # success
-    print_success
+    # 判断是否安装成功
+    if [ -d ".vim" ];then
+        if [ -f ".vimrc" ];then
+            print_success
+        else
+            print_error
+        fi
+    else
+        print_error
+    fi
 
     end=`get_now_timestamp`
     second=`expr ${end} - ${begin}`
