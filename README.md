@@ -5,6 +5,10 @@ bash install.sh
 ```
 注意:依赖git  
 
+## demo  
+
+![demo](https://raw.githubusercontent.com/lionng/simple_vim/master/images/demo1.png)
+
 ## vim  
 
 1. vim官方地址 : https://github.com/vim/vim  ![](https://img.shields.io/github/stars/vim/vim)  ![](https://img.shields.io/github/forks/vim/vim)  
