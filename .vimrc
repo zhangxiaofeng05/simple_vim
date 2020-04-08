@@ -83,6 +83,12 @@ set autoindent
 set shiftwidth=4
 " 光标遇到括号,自动高亮对应的括号
 set showmatch
+" 回退----undo持久化,需要手动创建到$HOME/.vim/undo目录
+if has('persistent_undo') "check if your vim version supports it 
+    set undofile "turn on the feature 
+    set undodir=$HOME/.vim/undo "directory where the undo files will be stored 
+endif
+
 
 " vim插件的相关配置
 " vim-airline

@@ -116,7 +116,8 @@ function main()
     # 下载vimrc
     cd $HOME
     wget https://raw.githubusercontent.com/lionng/simple_vim/master/.vimrc
-
+    # undo持久化,需要手动创建到$HOME/.vim/undo目录
+    mkdir -p $HOME/.vim/undo
     # 执行安装插件的命令
     install_vim_plugin
 
