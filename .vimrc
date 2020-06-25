@@ -65,6 +65,8 @@ set incsearch
 " 设置主题
 " colorscheme molokai
 colorscheme desert
+" 解决插入模式下delete/backspce键失效问题
+set backspace=2
 
 " 高亮显示当前行/列
 set cursorline
