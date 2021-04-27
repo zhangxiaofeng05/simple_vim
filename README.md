@@ -1,40 +1,29 @@
-## 安装  
+## install  
+### first step  
+https://github.com/junegunn/vim-plug  
+### second step
 ```
-wget https://raw.githubusercontent.com/lionng/simple_vim/master/install.sh
-bash install.sh
+see .vimrc
 ```
-注意:依赖git  
-
-## demo  
-
-![demo](https://raw.githubusercontent.com/lionng/simple_vim/master/images/demo1.png)
 
 ## vim  
 
-1. vim官方地址 : https://github.com/vim/vim  ![](https://img.shields.io/github/stars/vim/vim)  ![](https://img.shields.io/github/forks/vim/vim)  
+1. vim : https://github.com/vim/vim  ![](https://img.shields.io/github/stars/vim/vim)  ![](https://img.shields.io/github/forks/vim/vim)  
 
-2. 查看vim支持的功能  
-$ `vim --version`  
-eg:查看vim是否支持python $ `vim --version | grep python`  
-+代表支持,-代表不支持  
+2. vim config file
+system config file: /etc/vim/vimrc  
+user config file: ~/.vimrc  
 
-3. vim配置文件--vimrc  
-系统配置文件路径: /etc/vim/vimrc  
-用户配置文件路径: ~/.vimrc  
+## vim plugin control
 
-## vim插件管理
-
-|名称|GitHub地址|stars|forks|
+|name|GitHub|stars|forks|
 |----|---------|-----|----|
 |VundleVim|https://github.com/VundleVim/Vundle.vim|![](https://img.shields.io/github/stars/VundleVim/Vundle.vim)|![](https://img.shields.io/github/forks/VundleVim/Vundle.vim)|
 |vim-plug|https://github.com/junegunn/vim-plug|![](https://img.shields.io/github/stars/junegunn/vim-plug)|![](https://img.shields.io/github/forks/junegunn/vim-plug)|
 
-插件管理器,帮助我们更好的管理插件  
-VundleVim经典好用,vim-plug并行,速度快  
+## my plugin
 
-## 我的插件
-
-|名称|GitHub地址|简介|stars|forks|
+|name|GitHub|简介|stars|forks|
 |----|---------|----|----|-----|
 |nerdtree|https://github.com/preservim/nerdtree|文件树|![](https://img.shields.io/github/stars/preservim/nerdtree)|![](https://img.shields.io/github/forks/preservim/nerdtree)|
 |vim-airline|https://github.com/vim-airline/vim-airline|vim底栏增强,替代品可用powerline|![](https://img.shields.io/github/stars/vim-airline/vim-airline)|![](https://img.shields.io/github/forks/vim-airline/vim-airline)|
@@ -61,8 +50,4 @@ $ vim-addons install youcompleteme
 1. - [x] install.sh  
 2. - [ ]  uninstall.sh  
 
-## 为什么写这个  
-
-vim用的很多,插件能够事半功倍.  
-制作属于自己`vimrc`
 
